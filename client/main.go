@@ -26,7 +26,7 @@ func main() {
 			panic(err)
 		}
 
-		log.Println("client result for add", resp)
+		log.Println("client result for add ", resp)
 	})
 
 	g.GET("multiply/:a/:b", func(ctx *gin.Context) {
@@ -37,7 +37,7 @@ func main() {
 			panic(err)
 		}
 
-		log.Println("client result for multiply", resp)
+		log.Println("client result for multiply ", resp)
 	})
 
 	log.Println("Starting to serve the client")
